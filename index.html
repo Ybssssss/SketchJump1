@@ -129,6 +129,7 @@
           document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%";
               }).then((unityInstance) => {
                 document.querySelector("#unity-loading-bar").style.display = "none";
+                const fsBtn = document.querySelector("#unity-fullscreen-button");
                 if (fsBtn) {
                   fsBtn.onclick = () => {
                     const root = document.getElementById('unity-container');
